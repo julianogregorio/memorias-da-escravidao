@@ -1,0 +1,6 @@
+{
+  "name": "Memória da Escravidão no Brasil",
+  "description": "Plataforma digital para consulta e preservação de dados históricos, inventários post-mortem e escrituras de compra e venda de escravizados no Brasil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
