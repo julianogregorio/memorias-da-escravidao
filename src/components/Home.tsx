@@ -10,10 +10,10 @@ import {
   Users, 
   Calendar, 
   Building2, 
-  CheckCircle2, 
-  ExternalLink 
+  CheckCircle2 
 } from 'lucide-react';
 import { METADADOS_ACERVOS } from '../services/mockData';
+import heroManuscriptImg from '../assets/images/historical_manuscript_hero_1792470994702.jpg';
 
 interface HomeProps {
   onSelectAcervo: (id: string) => void;
@@ -33,8 +33,8 @@ export const Home: React.FC<HomeProps> = ({
         {/* Measured contrast scrim over archival image */}
         <div className="absolute inset-0 z-0 opacity-25 mix-blend-luminosity">
           <img
-            src="/src/assets/images/historical_manuscript_hero_1792470994702.jpg"
-            alt="Manuscritos históricos do século XIX da Comarca de Machado e Sul de Minas"
+            src={heroManuscriptImg}
+            alt="Manuscritos históricos oitocentistas sobre a escravidão no Brasil"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
           />
@@ -49,13 +49,13 @@ export const Home: React.FC<HomeProps> = ({
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#FDFBF7] leading-tight text-balance">
-              Preservação e Consulta da Memória da Escravidão no Brasil
+              Preservação e Consulta das Memórias da Escravidão no Brasil
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#F4EFE6]/90 leading-relaxed max-w-2xl">
-              Um acervo digital interativo que democratiza o acesso a fontes primárias oitocentistas — 
-              inventários post-mortem, escrituras de compra e venda e registros paroquiais — resgatando as 
-              trajetórias, nomes e famílias escravizadas na Comarca de Machado e no Sul de Minas Gerais.
+              Um acervo digital interativo que democratiza o acesso a fontes primárias — como inventários 
+              post-mortem, registros paroquiais e escrituras de compra e venda de escravizados — resgatando 
+              as trajetórias, nomes e famílias escravizadas.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -79,11 +79,11 @@ export const Home: React.FC<HomeProps> = ({
 
             {/* Metadados institucionais discretos */}
             <div className="pt-4 flex flex-wrap items-center gap-3 text-xs text-[#F4EFE6]/75">
-              <span>Arquivo Municipal de Machado</span>
+              <span>Inventários Post-Mortem</span>
               <span aria-hidden="true">·</span>
-              <span>Comarca de Machado (MG)</span>
+              <span>Escrituras de Compra e Venda</span>
               <span aria-hidden="true">·</span>
-              <span>Digitalização &amp; Transcrição Paleográfica</span>
+              <span>Sistematização &amp; Transcrição Paleográfica</span>
             </div>
           </div>
         </div>
@@ -126,8 +126,8 @@ export const Home: React.FC<HomeProps> = ({
             Os 3 Acervos Documentais da Plataforma
           </h2>
           <p className="font-sans text-sm text-[#1F2937]/80 max-w-2xl mt-1">
-            Cada conjunto documental foi rigorosamente higienizado, digitalizado em alta resolução e tabulado 
-            em formato estruturado para consulta via navegador ou download imediato.
+            Cada conjunto documental foi transcrito, sistematizado metodologicamente e estruturado em 
+            planilhas para consulta pública online ou download.
           </p>
         </div>
 
@@ -213,20 +213,20 @@ export const Home: React.FC<HomeProps> = ({
               "Nos inventários post-mortem e escrituras públicas do Império, pessoas eram catalogadas 
               ao lado de arrobas de café, animais de carga e ferramentas. Transcrever esses autos não é 
               apenas recuperar documentos: é devolver nomes, laços familiares e dignidade histórica àqueles 
-              que construíram com as próprias mãos a riqueza do Sul de Minas."
+              que construíram com as próprias mãos a história e a riqueza do Brasil."
             </p>
 
             <div className="space-y-4 font-sans text-sm text-[#1F2937]/85 leading-relaxed">
               <p>
-                Durante o século XIX, o avanço da cafeicultura no Sul de Minas Gerais intensificou o tráfico 
-                interprovincial e as redes locais de exploração de mão de obra escravizada. Machado constituiu 
-                um polo administrativo, agrário e forense de relevância regional.
+                Durante o século XIX, o avanço da cafeicultura no Sul de Minas Gerais intensificou as redes 
+                locais de exploração de mão de obra escravizada. Machado constituiu um polo administrativo, 
+                agrário e forense de relevância regional.
               </p>
               <p>
-                Este projeto de extensão e pesquisa nasce da cooperação entre historiadores, paleógrafos e 
-                estudantes do <strong>IFSULDEMINAS Campus Machado</strong> com a <strong>Secretaria Municipal de Cultura e Turismo de Machado</strong>, 
-                garantindo que fontes custodiadas em arquivos cartoriais e municipais fiquem permanentemente 
-                abertas à sociedade e à rede pública de ensino.
+                Esta iniciativa de pesquisa e extensão nasce da atuação de pesquisadores e estudantes vinculados 
+                ao <strong>Grupo de Pesquisa em Cultura Material (GPCM)</strong> e ao <strong>IFSULDEMINAS – Campus Machado</strong>, 
+                estruturando fontes históricas para que permaneçam permanentemente abertas à sociedade, à pesquisa 
+                acadêmica e à rede pública de ensino.
               </p>
             </div>
 
@@ -272,41 +272,41 @@ export const Home: React.FC<HomeProps> = ({
               </h3>
             </div>
             <div className="text-xs text-[#1F2937]/70 md:text-right">
-              Projeto aprovado em edital de Preservação do Patrimônio Histórico Regional
+              Projeto de Pesquisa e Extensão – Direitos Humanos e Justiça (Edital IFSULDEMINAS)
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
             <div className="bg-white p-5 rounded border border-[#2C1810]/10 space-y-2">
               <div className="flex items-center gap-2 text-[#2C1810] font-bold text-sm">
-                <Landmark className="w-4 h-4 text-[#C59B27]" />
-                <span>Prefeitura Municipal de Machado</span>
+                <Landmark className="w-4 h-4 text-[#C59B27] shrink-0" />
+                <span>Grupo de Pesquisa em Cultura Material (GPCM)</span>
               </div>
               <p className="text-xs text-[#1F2937]/75">
-                Secretaria Municipal de Cultura e Turismo. Custódia, preservação física e autorização de 
-                digitalização dos acervos cartoriais e fundos municipais do município de Machado (MG).
+                Grupo de pesquisa e extensão que atua na área de História Social e Cultural e analisa 
+                as relações entre sociedade, cultura e materialidade ao longo do tempo.
               </p>
             </div>
 
             <div className="bg-white p-5 rounded border border-[#2C1810]/10 space-y-2">
               <div className="flex items-center gap-2 text-[#2C1810] font-bold text-sm">
-                <Building2 className="w-4 h-4 text-[#C59B27]" />
+                <Building2 className="w-4 h-4 text-[#C59B27] shrink-0" />
                 <span>IFSULDEMINAS Campus Machado</span>
               </div>
               <p className="text-xs text-[#1F2937]/75">
-                Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais. Núcleo de Pesquisa 
-                Histórica, transcrição paleográfica e desenvolvimento da plataforma computacional.
+                Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais. Pesquisa 
+                Histórica, transcrição paleográfica e Desenvolvimento de Sistemas.
               </p>
             </div>
 
             <div className="bg-white p-5 rounded border border-[#2C1810]/10 space-y-2">
               <div className="flex items-center gap-2 text-[#2C1810] font-bold text-sm">
-                <Users className="w-4 h-4 text-[#C59B27]" />
+                <Users className="w-4 h-4 text-[#C59B27] shrink-0" />
                 <span>Órgãos de Fomento à Pesquisa</span>
               </div>
               <p className="text-xs text-[#1F2937]/75">
-                Apoio e incentivo institucional vinculado a programas de Iniciação Científica (CNPq, FAPEMIG) 
-                e projetos de Extensão e Memória Cultural do Ministério da Educação.
+                Fomento institucional vinculado ao IFSULDEMINAS, PIBIC e FAPEMIG por meio da concessão 
+                de bolsas de pesquisa e iniciação científica para a execução do projeto.
               </p>
             </div>
           </div>
