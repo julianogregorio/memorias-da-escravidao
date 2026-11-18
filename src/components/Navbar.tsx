@@ -25,10 +25,12 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="bg-[#2C1810] text-[#F4EFE6] text-[11px] py-1.5 px-4 md:px-8 border-b border-[#C59B27]/30">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 tracking-wide font-sans text-xs">
-            <Landmark className="w-3.5 h-3.5 text-[#C59B27]" />
-            <span className="text-[#C59B27] font-semibold">Parceria Institucional:</span>
-            <span className="hidden sm:inline">Secretaria de Cultura e Turismo de Machado (MG) &amp; IFSULDEMINAS Campus Machado</span>
-            <span className="sm:hidden">Sec. Cultura de Machado &amp; IFSULDEMINAS</span>
+            <Landmark className="w-3.5 h-3.5 text-[#C59B27] shrink-0" />
+            <span className="text-[#C59B27] font-semibold">Realização:</span>
+            <span className="hidden sm:inline">
+              Grupo de Pesquisa em Cultura Material (GPCM) &amp; IFSULDEMINAS – Campus Machado
+            </span>
+            <span className="sm:hidden">GPCM &amp; IFSULDEMINAS</span>
           </div>
           <div className="text-[11px] text-[#F4EFE6]/70 hidden md:flex items-center gap-3">
             <span>Repositório de Fontes Primárias</span>
@@ -39,7 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Top Bar Contract: 3 zones separated by gap-8 */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 min-h-[4.5rem] flex items-center justify-between gap-8">
         {/* Zone 1: Brand Wordmark (Single text element in display face) */}
         <button
           onClick={() => {
@@ -48,15 +50,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           }}
           className="text-left group flex items-center gap-3 cursor-pointer shrink-0"
         >
-          <div className="w-10 h-10 rounded-sm bg-[#2C1810] border border-[#C59B27] flex items-center justify-center text-[#C59B27] shadow-xs group-hover:bg-[#3D2217] transition-colors">
+          <div className="w-10 h-10 rounded-sm bg-[#2C1810] border border-[#C59B27] flex items-center justify-center text-[#C59B27] shadow-xs group-hover:bg-[#3D2217] transition-colors shrink-0">
             <BookOpen className="w-5 h-5 text-[#C59B27]" />
           </div>
           <div>
             <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-[#2C1810] block leading-tight">
-              Memória da Escravidão no Brasil
+              Memórias da Escravidão no Brasil
             </span>
             <span className="text-[11px] uppercase tracking-wider text-[#C59B27] font-semibold block">
-              Comarca de Machado &amp; Sul de Minas
+              Bases de Dados &amp; Pesquisa Histórica
             </span>
           </div>
         </button>
