@@ -22,14 +22,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateAcervo }) 
       {/* Cabeçalho da Seção */}
       <div className="border-b border-[#2C1810]/15 pb-6">
         <span className="text-xs uppercase tracking-widest text-[#C59B27] font-semibold">
-          Historiografia &amp; Extensão Universitária
+          Historiografia, Pesquisa &amp; Extensão
         </span>
         <h1 className="font-serif text-2xl sm:text-4xl font-bold text-[#2C1810] mt-1">
-          Sobre o Projeto "Memória da Escravidão no Brasil"
+          Sobre o Projeto "Memórias da Escravidão no Brasil"
         </h1>
         <p className="text-xs sm:text-sm text-[#1F2937]/80 mt-2 max-w-3xl leading-relaxed">
-          Uma iniciativa pioneira de salvaguarda, paleografia e democratização de fontes documentais primárias 
-          oitocentistas custodiadas no município de Machado e no território do Sul de Minas Gerais.
+          Uma iniciativa de transcrição paleográfica, sistematização e democratização de fontes documentais 
+          primárias — como inventários post-mortem, registros paroquiais e escrituras de compra e venda de 
+          escravizados — dedicada à história social brasileira.
         </p>
       </div>
 
@@ -49,7 +50,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateAcervo }) 
               e assentos de batismo e óbito paroquiais.
             </p>
             <p>
-              O projeto <strong>Memória da Escravidão no Brasil</strong> surge com a missão de transcrever, 
+              O projeto <strong>Memórias da Escravidão no Brasil</strong> surge com a missão de transcrever, 
               catalogar e disponibilizar publicamente esses registros. Trata-se de uma intervenção de 
               reparação histórica e científica: retirar o escravizado da condição anônima de "mercadoria" 
               ou "bem móvel" e reconstituir seu nome, laços de parentesco, ofício, procedência étnica e 
@@ -102,14 +103,14 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateAcervo }) 
             <div className="flex items-center gap-2 border-b border-[#2C1810]/15 pb-3">
               <Landmark className="w-5 h-5 text-[#C59B27]" />
               <h3 className="font-serif font-bold text-base text-[#2C1810]">
-                Termo de Cooperação
+                Realização Institucional
               </h3>
             </div>
 
             <div className="space-y-3 text-xs text-[#1F2937]/80">
               <div>
-                <strong className="block text-[#2C1810]">Prefeitura Municipal de Machado:</strong>
-                <span>Secretaria de Cultura e Turismo. Guarda e custódia do patrimônio histórico-documental municipal.</span>
+                <strong className="block text-[#2C1810]">Grupo de Pesquisa em Cultura Material (GPCM):</strong>
+                <span>Coordenação científica, curadoria historiográfica e análise das relações entre sociedade, cultura e materialidade.</span>
               </div>
 
               <div>
@@ -119,7 +120,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateAcervo }) 
 
               <div>
                 <strong className="block text-[#2C1810]">Coordenador do Projeto:</strong>
-                <span className="font-serif font-semibold text-[#2C1810]">Prof. Juliano Gregório</span>
+                <span className="font-serif font-semibold text-[#2C1810]">Prof. Dr. Isaac C. Ribeiro</span>
               </div>
             </div>
 
@@ -140,8 +141,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateAcervo }) 
               <span>Apoio e Fomento</span>
             </div>
             <p className="text-xs text-[#1F2937]/70 leading-relaxed">
-              Iniciativa desenvolvida com fomento institucional de bolsas de pesquisa científica e extensão 
-              universitária, reafirmando o compromisso da educação pública federal com a história regional.
+              Iniciativa desenvolvida com fomento institucional do IFSULDEMINAS, PIBIC e FAPEMIG por meio da 
+              concessão de bolsas de pesquisa e iniciação científica, reafirmando o compromisso da educação 
+              pública federal com a história e a memória social do Brasil.
             </p>
           </div>
         </div>
